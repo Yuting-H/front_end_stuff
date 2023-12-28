@@ -1,0 +1,36 @@
+/* Comments */
+
+/* selects all elements */
+*{
+
+}
+
+/* select element*/
+h1 {
+    color: red;
+}
+
+/* select element with unique id*/
+#description {
+    font-family: 'Courier New', Courier, monospace;
+    color: greenyellow;
+    background-color: black;
+    padding: 20px;
+    margin: 30px;
+}
+
+/* select element with class */
+
+.normal-paragrah {
+
+}
+
+/* mix class and element */
+p.center {
+
+}
+
+/* grouping */
+h1, h2 {
+
+}
