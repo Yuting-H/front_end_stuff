@@ -34,3 +34,15 @@ p.center {
 h1, h2 {
 
 }
+
+hr {
+    
+}
+
+table, td, tr {
+    border: 2px;
+    border-style: solid;   
+    border-collapse: collapse; 
+}
+
+
