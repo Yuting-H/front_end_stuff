@@ -1,0 +1,26 @@
+* {
+    font-family: monospace;
+}
+
+#counter {
+    font-family: monospace;
+    text-align: center;
+    border: 10px;
+    border-color: aqua;
+}
+
+#operations {
+    text-align: center;
+    border-style: solid;
+    
+    border: 10px;
+    border-color: aqua;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+}
+
+
+
