@@ -2,6 +2,14 @@
     font-family: monospace;
 }
 
+h1 {
+    background-color: aqua;
+}
+
+#top_space{
+    height: 40vh;
+}
+
 #counter {
     font-family: monospace;
     text-align: center;
