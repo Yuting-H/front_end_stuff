@@ -6,11 +6,12 @@ h1 {
     background-color: aqua;
 }
 
-#top_space{
-    height: 40vh;
-}
 
 #counter {
+    margin: 5rem;
+}
+
+#display {
     font-family: monospace;
     text-align: center;
     border: 10px;
@@ -28,6 +29,11 @@ h1 {
 button {
     margin: 5px;
     padding: 8px;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 50%;
+
 }
 
 
