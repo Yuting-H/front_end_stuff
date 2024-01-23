@@ -16,6 +16,8 @@ h1 {
     text-align: center;
     border: 10px;
     border-color: aqua;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 #operations {
