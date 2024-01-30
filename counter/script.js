@@ -1,6 +1,6 @@
 let count = 0
 
-const counter = document.getElementById("counter");
+const counterDisplay = document.getElementById("display");
 const incrementButton = document.getElementById("increment");
 const decrementButton = document.getElementById("decrement");
 
