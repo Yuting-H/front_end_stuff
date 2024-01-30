@@ -6,12 +6,12 @@ const decrementButton = document.getElementById("decrement");
 
 function incrementCount() {
     count++;
-    counter.innerHTML = count;
+    counterDisplay.innerHTML = count;
 }
 
 function decrementCount() {
     count --;
-    counter.innerHTML = count;
+    counterDisplay.innerHTML = count;
 }
 
 incrementButton.addEventListener("click", incrementCount);
