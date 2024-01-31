@@ -1,0 +1,26 @@
+#game-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    
+}
+
+#board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 4px;
+    width: 30%;
+    margin:auto;
+    margin-bottom: 1rem;
+    
+}
+
+#game-control{
+    margin: auto;
+}
+
+.play-box {
+    
+    padding: 50%;
+    border-style: solid;
+
+}
