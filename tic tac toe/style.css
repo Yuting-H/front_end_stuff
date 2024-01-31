@@ -1,16 +1,20 @@
+*{
+
+}
+
 #game-container {
     display: grid;
     grid-template-rows: auto auto;
-
+    
 }
 
 #board {
     display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 4px;
-    width: 30%;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    column-gap: 0px;
+    width: 50%;
     margin:auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     
 }
@@ -21,10 +25,20 @@
 
 #reset {
     padding: 1rem;
+    width: 100px;
+    
+    display: flex;
+    justify-content: center;
 }
 
-.play-box {
-    
-    padding: 50%;
 
+.play-box {
+    font-size: 8rem;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
 }

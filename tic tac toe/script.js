@@ -1,5 +1,5 @@
 let resetButton = document.getElementById("reset")
 
-function reset(){
+let playBoxes = document.getElementsByClassName("play-box")
 
-}
+playBoxes.item(0).innerHTML = 
