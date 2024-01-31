@@ -1,7 +1,7 @@
 #game-container {
     display: grid;
     grid-template-rows: auto auto;
-    
+
 }
 
 #board {
@@ -11,6 +11,7 @@
     width: 30%;
     margin:auto;
     margin-bottom: 1rem;
+
     
 }
 
@@ -18,9 +19,12 @@
     margin: auto;
 }
 
+#reset {
+    padding: 1rem;
+}
+
 .play-box {
     
     padding: 50%;
-    border-style: solid;
 
 }
