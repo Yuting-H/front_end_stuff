@@ -1,43 +1,44 @@
 
 #game-container {
-    display: grid;
-    grid-template-rows: auto auto;
+    position: absolute;
+    left: calc(50% - 7.5rem);
     
 }
 
 #board {
+    border: black 1px solid;
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    width: 50%;
-    margin: auto;
-    margin-bottom: 2rem;
-    max-width: 300px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
 
+}
+
+#display-container{
+    
+    position: relative;
+    z-index: 0;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    pointer-events: none;
     
 }
-
-#game-control{
-    margin: auto;
-}
-
-#reset {
-    padding: 1rem;
-    width: 100px;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-}
-
 
 .play-box {
+    width: 5rem;
+    height: 5rem;
     
-    font-size: 6em;
-    padding: 1rem;
-    line-height: 0rem;
-    width: 100px;
-    height: 100px;
+}
+
+.display-box {
+    font-size: 5rem;
+    font: 5rem sans-serif;
+    width: 5rem;
+    height: 5rem;
     display: flex;
-    align-items: center;
-    text-align: end;
+    justify-content: center;
     
+
 }
