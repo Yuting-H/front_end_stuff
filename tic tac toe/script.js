@@ -32,7 +32,10 @@ function switchPlayer() {
     }
 }
 
+//Function that resets the game 
 function resetGame() {
+
+    //clears the game board
     for (let index = 0; index < displayBoxes.length; index++) {
         displayBoxes[index].innerHTML = ""
     }
@@ -43,6 +46,7 @@ for (let index = 0; index < displayBoxes.length; index++) {
     playBoxes[index].addEventListener("click", onBoxClick(index))
 }
 
+//When the reset button is clicked, clear the game board
 resetButton.addEventListener("click", resetGame)
 
 
