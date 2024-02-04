@@ -9,10 +9,12 @@ var turn = "X"
 
 // When a play box is clicked
 function onBoxClick(index){
-    
+
     //return this logic 
     return function() {
 
+        resetButton.disabled = false
+        resetButton.style.visibility = "visible"
         //if the box is empty
         if (displayBoxes[index].innerHTML == "") {
             displayBoxes[index].innerHTML = turn    //draw X in box
@@ -34,6 +36,9 @@ function switchPlayer() {
 
 //Function that resets the game 
 function resetGame() {
+
+    resetButton.disabled = true
+    resetButton.style.visibility = "hidden"
 
     //clears the game board
     for (let index = 0; index < displayBoxes.length; index++) {
