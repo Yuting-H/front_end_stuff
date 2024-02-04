@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+
+#sticky-bar {
+    background-color: darkblue;
+    border: 1px red solid;
+    position: sticky;
+}
+
+#home-link {
+    
+}
