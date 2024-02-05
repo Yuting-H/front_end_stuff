@@ -18,7 +18,9 @@ function onBoxClick(index){
         //if the box is empty
         if (displayBoxes[index].innerHTML == "") {
             displayBoxes[index].innerHTML = turn    //draw X in box
+            checkWin(index)
             switchPlayer()      //switch to O
+
         }
         
     }
@@ -39,11 +41,15 @@ function resetGame() {
 
     resetButton.disabled = true
     resetButton.style.visibility = "hidden"
-
+    turn = "X"
     //clears the game board
     for (let index = 0; index < displayBoxes.length; index++) {
         displayBoxes[index].innerHTML = ""
     }
+}
+
+function checkWin (idnex) {
+    
 }
 
 //adding event listeners to each box
@@ -54,6 +60,6 @@ for (let index = 0; index < displayBoxes.length; index++) {
 //When the reset button is clicked, clear the game board
 resetButton.addEventListener("click", resetGame)
 
-
+resetButton.style.visibility = "hidden"
 
 
