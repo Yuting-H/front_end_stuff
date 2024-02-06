@@ -1,4 +1,23 @@
+body {
+    margin: 0;
+}
 
+
+#light-mode{
+    border: 1px;
+    border-radius: 50px;
+    line-height: 0;
+    margin: 0 auto;
+    margin-right: 0%;
+    display: block;
+    padding: 1rem;
+    
+}
+
+#bulb {
+    position: a;
+    z-index: 10;
+}
 
 #game-container {
     position: absolute;

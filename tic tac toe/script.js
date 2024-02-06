@@ -60,6 +60,6 @@ for (let index = 0; index < displayBoxes.length; index++) {
 //When the reset button is clicked, clear the game board
 resetButton.addEventListener("click", resetGame)
 
-resetButton.style.visibility = "hidden"
+//resetButton.style.visibility = "hidden"
 
 
