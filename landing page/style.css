@@ -1,13 +1,75 @@
 body {
-    margin: 0px;
+    margin: 0px; 
 }
 
-#sticky-bar {
-    background-color: darkblue;
-    border: 1px red solid;
+*{
+    font-family: 
+        'Franklin Gothic Medium', 
+        'Arial Narrow', Arial, 
+        sans-serif;
+}
+
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+a{
+    color: black;
+    font-size: 2rem;
+}
+
+#header {
+    border: 1px solid green;
+    background-color: white;
     position: sticky;
+    top: 0px;
+    padding:  10px 0px 10px 10px;
+    box-shadow: 0px 4px 10px 1px darkblue;
+    justify-content: end;
 }
 
 #home-link {
+    display: inline-bl;
+    border: 1px red solid;
+}
+
+#login {
+    margin: ;
+    border: 1px red solid;
     
+}
+
+#main-page {
+    padding-top: 3rem;
+    padding-bottom: 40rem;
+    background-image: linear-gradient(to bottom, blue ,white);
+}
+
+#product{
+    display: block;
+    padding-left: calc(10% + 20px);
+}
+
+#discover-btn{
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin: 0 0% 0% 10%;
+}
+
+#compare-page{
+    margin: 100px;
+    background-color: white;
+}
+
+#footer {
+    padding: 100px;
+    background-color: #4d4e56;
+    display: grid;
 }
