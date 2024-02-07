@@ -10,6 +10,31 @@ body {
         sans-serif;
 }
 
+table, tr, td, th{
+    color: rgb(18, 17, 29);
+}
+
+th{
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0px 5px 0px;
+
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+
+tr {
+    row-gap: 100px;
+}
+
+td {
+    width: 10%;
+}
 
 h1 {
     color: white;
@@ -20,42 +45,50 @@ p {
 }
 
 a{
+
     text-decoration: none;
 }
 
 #header {
-    border: 1px solid green;
+
     background-color: white;
     position: sticky;
     display: flex;
     top: 0px;
     padding:  5px 0px 5px 20px;
     box-shadow: 0px 0px 10px 0px darkblue;
-    justify-content: start;
+    justify-content: space-between;
 }
 
 .header-link {
-    border: 1px solid red;
+
     color: black;
     font-size: 1.5rem;
-    justify-content: space-between;
+    
 }
 
 #login {
     display: flex;
-    justify-self: end;
+    justify-self: start;
+    flex: 100px 0;
     
 }
 
 #main-page {
+    
     padding-top: 3rem;
     padding-bottom: 40rem;
     background-image: linear-gradient(to bottom, blue ,white);
+    padding-left: 10%;
 }
 
 #product{
     display: block;
-    padding-left: calc(10% + 10px);
+}
+
+#product-discription{
+    display: flex;
+    max-width: 30rem;
 }
 
 #discover-btn{
@@ -63,13 +96,30 @@ a{
     border: none;
     border-radius: 50px;
     font-size: 1rem;
-    margin: 0 0% 0% 10%;
+
 }
 
 #compare-page{
     border: 1px red solid;
-    padding: 300px;
+    padding: 10px 0px 50px 0px;
     background-color: white;
+    display: flex;
+}
+
+#pro{
+    color: darkblue;
+}
+
+.feature{
+    font-size: 1rem;
+}
+
+.locked {
+    color: grey;
+}
+
+.unlocked {
+    color: black;
 }
 
 #footer {
