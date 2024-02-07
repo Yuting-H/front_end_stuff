@@ -77,7 +77,7 @@ a{
 #main-page {
     
     padding-top: 3rem;
-    padding-bottom: 40rem;
+    padding-bottom: 10rem;
     background-image: linear-gradient(to bottom, blue ,white);
     padding-left: 10%;
 }
@@ -96,7 +96,16 @@ a{
     border: none;
     border-radius: 50px;
     font-size: 1rem;
+    display: block;
 
+}
+
+#main-img {
+    
+    max-block-size: 300px;
+    display: block;
+    margin: auto;
+    padding-left: 50%;
 }
 
 #compare-page{
