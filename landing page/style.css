@@ -49,6 +49,14 @@ a{
     text-decoration: none;
 }
 
+input {
+    margin: 20px 10px 20px 10px;
+    padding-right: 100px;
+    border: none;
+    border-radius: 2px;
+    
+}
+
 #header {
 
     background-color: white;
@@ -67,12 +75,21 @@ a{
     
 }
 
-#login {
-    display: flex;
-    justify-self: start;
-    flex: 100px 0;
+#login-btn {
     
+   margin-right: 10px;
 }
+
+#login-form{
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(247, 247, 247);
+    box-shadow: grey 0px 0px 10px 1px;
+    border-radius: 10px;
+    margin: auto;
+    width:  20rem;
+    transform: translateY(50%);
+}
+
 
 #main-page {
     
@@ -109,7 +126,7 @@ a{
 }
 
 #compare-page{
-    border: 1px red solid;
+
     padding: 10px 0px 50px 0px;
     background-color: white;
     display: flex;
@@ -132,7 +149,13 @@ a{
 }
 
 #footer {
-    padding: 100px;
+    padding: 10px;
     background-color: #4d4e56;
-    display: grid;
+    
+    
+}
+
+#copyright {
+    font-size: 0.8rem;
+    color: #c9c9c9;
 }
