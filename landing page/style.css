@@ -8,6 +8,9 @@ body {
         'Franklin Gothic Medium', 
         'Arial Narrow', Arial, 
         sans-serif;
+
+    padding: 0;
+    margin: 0;
 }
 
 table, tr, td, th{
@@ -25,6 +28,10 @@ table {
     text-align: center;
     margin: auto;
     font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 4rem;
 }
 
 
@@ -45,7 +52,6 @@ p {
 }
 
 a{
-
     text-decoration: none;
 }
 
@@ -53,7 +59,7 @@ input {
     margin: 20px 10px 20px 10px;
     padding-right: 100px;
     border: none;
-    border-radius: 2px;
+    border-radius: 6px;
     
 }
 
@@ -101,15 +107,18 @@ input {
 
 #product{
     display: block;
+    margin: 10px 0px;
 }
 
 #product-discription{
     display: flex;
     max-width: 30rem;
+    margin: 0px 0px;
 }
 
 #discover-btn{
     padding: 15px;
+    margin-top: 30px;
     border: none;
     border-radius: 50px;
     font-size: 1rem;
@@ -125,11 +134,39 @@ input {
     padding-left: 50%;
 }
 
+#present-page{
+    border: 1px solid green;
+    background-color: white;
+    display: flex;
+    flex-basis: 100%;
+    max-height: 400px;
+    flex-wrap: wrap;
+}
+
+#present-p {
+    border: 1px solid red;
+    color: black;
+    display: inline-block;
+    margin: 10px;
+    max-width: calc(50% - 20px);
+
+}
+
+#present-image {
+    border: 1px solid red;
+    display: flexbox;
+    margin: 10px;
+    max-width: 50%;
+    max-height: 300px;
+}
+
 #compare-page{
 
     padding: 10px 0px 50px 0px;
     background-color: white;
     display: flex;
+    flex-shrink: 5;
+    
 }
 
 #pro{
@@ -158,4 +195,8 @@ input {
 #copyright {
     font-size: 0.8rem;
     color: #c9c9c9;
+}
+
+#login-page {
+    background-color: rgb(204, 204, 204);
 }
