@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+#game-box {
+    display: flex;
+    border: 1px solid red;
+    height: calc(100vh - 2px);
+}
+
+#player {
+    border: 1px solid green;
+    background-color: antiquewhite;
+    position: absolute;
+    transform: translate(100px, 100px);
+}
+
+#player-attribute {
+    border: 1px solid red;
+    padding: 20px;
+    margin: 0px 0px 10px 0px;
+}
