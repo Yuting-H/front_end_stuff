@@ -12,7 +12,7 @@ var xPos = 0;
 
 var yPos = 0;
 
-var speed = 5;
+var speed = 2;
 
 //records which key is pressed
 var keyDowns = {
@@ -22,17 +22,10 @@ var keyDowns = {
     d: false
 }
 
-let attributeWindow = document.getElementById("player-attribute");
- 
-player.addEventListener("mouseenter", (event) => {
-    attributeWindow.style.opacity = 100;
-})
-
-player.addEventListener("mouseleave", (event) => {
-    attributeWindow.style.opacity = 0
-})
 
 window.addEventListener("keydown", (event) => {
+
+    console.table(event)
     
     switch (event.key) {
         case "w":
@@ -104,8 +97,11 @@ function gameLoop() {
         yPos = yPos + 1 * speed;
     }
 
+    console.log(event);
+
     //moves the player
     player.style.transform = `translate(${xPos}px, ${yPos}px)`
 }
 
+//runs the game loop once every 10 ms
 setInterval(gameLoop, 10)
