@@ -3,10 +3,19 @@
   padding: 0;
 }
 
+#score-display {
+  display: block;
+  position: absolute;
+  border: 1px solid green;
+  height: 10vh;
+  width: calc(100vw - 2px);
+}
+
 #game-box {
   display: block;
   border: 1px solid red;
-  height: calc(100vh - 2px);
+  height: calc(90vh - 20 px);
+
 }
 
 #dino {
