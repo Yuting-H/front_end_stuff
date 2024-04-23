@@ -1,6 +1,6 @@
 let dino = document.getElementById("dino");
 
-let ground = document.getElementById("ground");
+let ground = document.getElementById("ground-1");
 
 let dinoBox = dino.getBoundingClientRect();
 
@@ -13,10 +13,11 @@ var onGround = false;
 
 var fallRate = 1;
 
+//X coord of ground offset
+var groundOffset = ground.getBoundingClientRect().left;
+
 //the Y coord of dino
 var dino_Y = dinoBox.bottom;
-
-dino.style.transform = `translate(100px, ${dino_Y}px)`;
 
 var keyDowns = {
   jump: false,
@@ -31,6 +32,7 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
+//updates key releases
 window.addEventListener("keyup", (event) => {
 
   //space released
@@ -39,27 +41,38 @@ window.addEventListener("keyup", (event) => {
   }
 });
 
-//update game
+//updates game
 function updateGame() {
   console.log(dino_Y);
 
-  //move dino
+  //update dino position
   dino.style.transform = `translate(100px, ${dino_Y - dinoBox.height}px)`;
 
   //Updates position of dino
   //if dino is in air
   if (dino_Y < groundY) {
+
+    //simulate falling using fallrate
     dino_Y = dino_Y + fallRate;
     fallRate = fallRate + 0.1;
+
     onGround = false;
   } else {
+    //if dino touches ground, resets fall rate
     onGround = true;
     dino_Y = groundY
     fallRate = 0;
   }
 
+  //only let dino jumps if dino is on ground and jump is pressed
   if (onGround && keyDowns.jump == true) {
     dino_Y = dino_Y - 100;
+  }
+
+  ground.style.transform = `translate(${groundOffset}px, 50vh)`
+  groundOffset--;
+  if (groundOffset < 0) {
+    groundOffset = end
   }
 }
 
