@@ -1,23 +1,27 @@
 body {
-    margin: 0px; 
+    margin: 0px;
     padding: 0px;
+
 }
 
-*{
-    font-family: 
-        'Franklin Gothic Medium', 
-        'Arial Narrow', Arial, 
+* {
+    font-family:
+        'Franklin Gothic Medium',
+        'Arial Narrow', Arial,
         sans-serif;
 
     padding: 0;
     margin: 0;
 }
 
-table, tr, td, th{
+table,
+tr,
+td,
+th {
     color: rgb(18, 17, 29);
 }
 
-th{
+th {
     border-bottom: 1px solid lightgrey;
     padding: 10px 0px 5px 0px;
 
@@ -51,7 +55,7 @@ p {
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -60,7 +64,7 @@ input {
     padding-right: 100px;
     border: none;
     border-radius: 6px;
-    
+
 }
 
 #header {
@@ -68,8 +72,9 @@ input {
     background-color: white;
     position: sticky;
     display: flex;
+    justify-content: space-between;
     top: 0px;
-    padding:  5px 0px 5px 20px;
+    padding: 5px 0px 5px 20px;
     box-shadow: 0px 0px 10px 0px darkblue;
     justify-content: space-between;
 }
@@ -78,45 +83,46 @@ input {
 
     color: black;
     font-size: 1.5rem;
-    
+
 }
 
 #login-btn {
-    
-   margin-right: 10px;
+
+
+    margin-right: 10px;
 }
 
-#login-form{
+#login-form {
     border: 1px solid rgb(204, 204, 204);
     background-color: rgb(247, 247, 247);
     box-shadow: grey 0px 0px 10px 1px;
     border-radius: 10px;
     margin: auto;
-    width:  20rem;
+    width: 20rem;
     transform: translateY(50%);
 }
 
 
 #main-page {
-    
+
     padding-top: 3rem;
     padding-bottom: 10rem;
-    background-image: linear-gradient(to bottom, blue ,white);
+    background-image: linear-gradient(to bottom, blue, white);
     padding-left: 10%;
 }
 
-#product{
+#product {
     display: block;
     margin: 10px 0px;
 }
 
-#product-discription{
+#product-discription {
     display: flex;
     max-width: 30rem;
     margin: 0px 0px;
 }
 
-#discover-btn{
+#discover-btn {
     padding: 15px;
     margin-top: 30px;
     border: none;
@@ -127,53 +133,53 @@ input {
 }
 
 #main-img {
-    
+
     max-block-size: 300px;
     display: block;
     margin: auto;
     padding-left: 50%;
 }
 
-#present-page{
+#present-page {
     border: 1px solid green;
     background-color: white;
     display: flex;
     flex-basis: 100%;
-    max-height: 400px;
+
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 #present-p {
     border: 1px solid red;
     color: black;
-    display: inline-block;
     margin: 10px;
     max-width: calc(50% - 20px);
-
 }
 
 #present-image {
     border: 1px solid red;
-    display: flexbox;
+
     margin: 10px;
-    max-width: 50%;
-    max-height: 300px;
+    max-width: calc(50vw - 20px);
+    max-height: 400px;
+    min-width: 200px;
 }
 
-#compare-page{
+#compare-page {
 
     padding: 10px 0px 50px 0px;
     background-color: white;
     display: flex;
     flex-shrink: 5;
-    
+
 }
 
-#pro{
+#pro {
     color: darkblue;
 }
 
-.feature{
+.feature {
     font-size: 1rem;
 }
 
@@ -188,8 +194,8 @@ input {
 #footer {
     padding: 10px;
     background-color: #4d4e56;
-    
-    
+
+
 }
 
 #copyright {
