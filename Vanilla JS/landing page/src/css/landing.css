@@ -1,95 +1,25 @@
-body {
-    margin: 0px;
-    padding: 0px;
-
-}
-
-* {
-    font-family:
-        'Franklin Gothic Medium',
-        'Arial Narrow', Arial,
-        sans-serif;
-
-    padding: 0;
-    margin: 0;
-}
-
-table,
-tr,
-td,
-th {
-    color: rgb(18, 17, 29);
-}
-
-th {
-    border-bottom: 1px solid lightgrey;
-    padding: 10px 0px 5px 0px;
-
-}
-
-table {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    font-size: 1.5rem;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-
-tr {
-    row-gap: 100px;
-}
-
-td {
-    width: 10%;
-}
-
-h1 {
-    color: white;
-}
-
-p {
-    color: white;
-}
-
-a {
-    text-decoration: none;
-}
-
-input {
-    margin: 20px 10px 20px 10px;
-    padding-right: 100px;
-    border: none;
-    border-radius: 6px;
-
-}
-
 #header {
 
+    padding: 5px 20px 5px 20px;
     background-color: white;
     position: sticky;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 32px;
     top: 0px;
-    padding: 5px 0px 5px 20px;
     box-shadow: 0px 0px 10px 0px darkblue;
-    justify-content: space-between;
+    
 }
 
-.header-link {
+#header a{
 
     color: black;
     font-size: 1.5rem;
 
 }
 
-#login-btn {
-
-
-    margin-right: 10px;
+#home-btn{
+    margin-right: auto;
 }
 
 #login-form {
@@ -144,26 +74,25 @@ input {
     border: 1px solid green;
     background-color: white;
     display: flex;
-    flex-basis: 100%;
-
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
-#present-p {
+#present-page p{
     border: 1px solid red;
     color: black;
-    margin: 10px;
-    max-width: calc(50% - 20px);
+    margin-right: auto;
+    width: 50%;
+    flex: 1 1 auto;
 }
 
-#present-image {
+#present-page img {
     border: 1px solid red;
-
+    flex: 1 1 auto;
     margin: 10px;
     max-width: calc(50vw - 20px);
     max-height: 400px;
-    min-width: 200px;
+    width: 200px;
 }
 
 #compare-page {
@@ -203,6 +132,3 @@ input {
     color: #c9c9c9;
 }
 
-#login-page {
-    background-color: rgb(204, 204, 204);
-}
